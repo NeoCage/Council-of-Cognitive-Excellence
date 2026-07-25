@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Council of High Intelligence — Provider Detection Script
+# Council of Cognitive Excellence — Provider Detection Script
 # Detects available LLM providers and outputs structured JSON to stdout.
 # Usage: ./scripts/detect-providers.sh
 

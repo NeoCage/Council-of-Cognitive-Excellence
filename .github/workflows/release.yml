@@ -19,7 +19,7 @@ jobs:
       - name: Build release tarball
         run: |
           VERSION="${GITHUB_REF_NAME}"
-          ARCHIVE="council-of-high-intelligence-${VERSION}.tar.gz"
+          ARCHIVE="council-of-cognitive-excellence-${VERSION}.tar.gz"
           tar --exclude='./.git' \
               --exclude='./.github' \
               --exclude='./demos' \

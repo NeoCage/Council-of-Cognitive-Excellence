@@ -1,6 +1,6 @@
 ---
 name: council
-description: "Convene the Council of High Intelligence in opencode when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
+description: "Convene the Council of Cognitive Excellence in opencode when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
 ---
 
 # /council for opencode
@@ -473,7 +473,7 @@ Synthesis is performed by the **Chairman selected in STEP 1.7**, not by the coor
 
 **Chairman prompt template:**
 ```
-You are the Chairman of the Council of High Intelligence. You did not
+You are the Chairman of the Council of Cognitive Excellence. You did not
 deliberate in this session — you are the synthesizer.
 
 The original problem under deliberation:

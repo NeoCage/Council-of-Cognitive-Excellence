@@ -21,7 +21,7 @@ usage() {
   cat <<'EOF'
 Usage: ./install.sh [--claude-dir PATH] [--codex-dir PATH] [--gemini-dir PATH] [--opencode-dir PATH] [--codex] [--codex-only] [--gemini] [--gemini-only] [--opencode] [--opencode-only] [--copy-configs] [--dry-run] [--help]
 
-Install Council of High Intelligence into Claude Code, Codex, Gemini CLI, and/or opencode skill directories.
+Install Council of Cognitive Excellence into Claude Code, Codex, Gemini CLI, and/or opencode skill directories.
 
 Options:
   --claude-dir PATH    Target Claude config directory (default: ~/.claude)
@@ -175,7 +175,7 @@ fi
 
 CONFIGS_SRC_DIR="${SCRIPT_DIR}/configs"
 
-echo "Installing Council of High Intelligence..."
+echo "Installing Council of Cognitive Excellence..."
 if [[ "${INSTALL_CLAUDE}" == true ]]; then
   AGENTS_DEST="${CLAUDE_DIR}/agents"
   CLAUDE_SKILL_DEST_DIR="${CLAUDE_DIR}/skills/council"
@@ -279,7 +279,7 @@ fi
 
 if [[ "${INSTALL_GEMINI}" == true ]]; then
   echo
-  GEMINI_EXT_ROOT="${GEMINI_DIR}/extensions/council-of-high-intelligence"
+  GEMINI_EXT_ROOT="${GEMINI_DIR}/extensions/council-of-cognitive-excellence"
   GEMINI_EXT_DEST_DIR="${GEMINI_EXT_ROOT}/skills/council"
   GEMINI_SKILL_DEST="${GEMINI_EXT_DEST_DIR}/SKILL.md"
   GEMINI_AGENTS_DEST_DIR="${GEMINI_EXT_DEST_DIR}/agents"
@@ -294,9 +294,9 @@ if [[ "${INSTALL_GEMINI}" == true ]]; then
   if [[ "$DRY_RUN" == false ]]; then
     cat <<EOF > "${GEMINI_EXT_ROOT}/gemini-extension.json"
 {
-  "name": "council-of-high-intelligence",
+  "name": "council-of-cognitive-excellence",
   "version": "${PROJECT_VERSION}",
-  "description": "Council of High Intelligence multiple persona deliberation system"
+  "description": "Council of Cognitive Excellence multiple persona deliberation system"
 }
 EOF
   else

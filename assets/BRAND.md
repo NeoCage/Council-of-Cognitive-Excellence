@@ -1,8 +1,8 @@
-# Brand kit — council-of-high-intelligence
+# Brand kit — council-of-cognitive-excellence
 
 **As-of:** 2026-07-14  
 **Owner:** 0xNyk  
-**Hub:** https://www.nyk.dev/oss/council-of-high-intelligence
+**Hub:** https://www.nyk.dev/oss/council-of-cognitive-excellence
 
 ## Role
 
@@ -13,7 +13,7 @@ Open-source **deliberation skill** — structured multi-persona disagreement for
 | File | Size | Use |
 |---|---|---|
 | `github-social.svg` | 1280×640 | GitHub social / OG |
-| `header.jpeg` | 1200×480 | README hero (illustrated) |
+| `header.png` | 1200×480 | README hero (illustrated) |
 | `logo-mark.svg` | 256×256 | Mark / avatar |
 | `deliberation-blueprint.svg` | 1200×560 | Protocol diagram in README/docs |
 | `star-history-*.svg` | — | Growth charts |

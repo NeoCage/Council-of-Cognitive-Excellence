@@ -2,7 +2,7 @@
 
 ## What this project ships
 
-Council of High Intelligence distributes **prompt files (skills + agent personas) and shell scripts** that users install into their AI coding tools (Claude Code, Codex, Gemini CLI). The threat model is therefore supply-chain shaped:
+Council of Cognitive Excellence distributes **prompt files (skills + agent personas) and shell scripts** that users install into their AI coding tools (Claude Code, Codex, Gemini CLI). The threat model is therefore supply-chain shaped:
 
 - **Prompt injection** — a malicious change to `SKILL*.md` or `agents/*.md` could smuggle instructions into a user's AI assistant.
 - **Shell execution** — `install.sh` and `scripts/*.sh` run on user machines; the coordinator protocol dispatches provider CLIs via shell.
@@ -11,7 +11,7 @@ Council of High Intelligence distributes **prompt files (skills + agent personas
 ## Reporting a vulnerability
 
 Please **do not open a public issue** for security-sensitive reports. Instead use
-[GitHub private vulnerability reporting](https://github.com/0xNyk/council-of-high-intelligence/security/advisories/new).
+[GitHub private vulnerability reporting](https://github.com/0xNyk/council-of-cognitive-excellence/security/advisories/new).
 
 You can expect an initial response within 7 days. Verified fixes are credited in the changelog unless you prefer otherwise.
 

@@ -1,6 +1,6 @@
 ---
 name: council
-description: "Convene the Council of High Intelligence in Codex when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
+description: "Convene the Council of Cognitive Excellence in Codex when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
 ---
 
 # /council for Codex

@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to Council of High Intelligence.
+Thanks for contributing to Council of Cognitive Excellence.
 
 ## Development flow
 

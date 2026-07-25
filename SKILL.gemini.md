@@ -1,6 +1,6 @@
 ---
 name: council
-description: "Convene the Council of High Intelligence in Gemini CLI when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
+description: "Convene the Council of Cognitive Excellence in Gemini CLI when the user asks for /council, council deliberation, triads, duo debates, or multi-perspective decision analysis."
 ---
 
 # /council for Gemini CLI
@@ -72,7 +72,7 @@ If no panel flag is present, auto-select the best triad from problem context.
 
 Resolve council files in this order:
 
-1. `~/.gemini/extensions/council-of-high-intelligence/skills/council/agents/`
+1. `~/.gemini/extensions/council-of-cognitive-excellence/skills/council/agents/`
 2. `./agents/`
 
 If neither exists, stop and tell the user to run `./install.sh --gemini`.

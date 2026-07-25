@@ -1,7 +1,7 @@
-# Council of High Intelligence
+# Council of Cognitive Excellence
 
 <p align="center">
-  <img src="assets/header.jpeg" alt="Council of High Intelligence" width="800">
+  <img src="assets/header.png" alt="Council of Cognitive Excellence" width="800">
 </p>
 
 <p align="center">
@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/0xNyk/council-of-high-intelligence/actions/workflows/lint.yml"><img src="https://github.com/0xNyk/council-of-high-intelligence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
-  <a href="https://github.com/0xNyk/council-of-high-intelligence/releases"><img src="https://img.shields.io/github/v/release/0xNyk/council-of-high-intelligence" alt="Release"></a>
+  <a href="https://github.com/0xNyk/council-of-cognitive-excellence/actions/workflows/lint.yml"><img src="https://github.com/0xNyk/council-of-cognitive-excellence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
+  <a href="https://github.com/0xNyk/council-of-cognitive-excellence/releases"><img src="https://img.shields.io/github/v/release/0xNyk/council-of-cognitive-excellence" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
 </p>
 
@@ -27,8 +27,8 @@ preserves unresolved questions, dissent, kill criteria, and the next concrete ac
 Claude Code users can install the plugin directly:
 
 ```text
-/plugin marketplace add 0xNyk/council-of-high-intelligence
-/plugin install council@council-of-high-intelligence
+/plugin marketplace add 0xNyk/council-of-cognitive-excellence
+/plugin install council@council-of-cognitive-excellence
 ```
 
 Then convene the full council, a faster panel, or a two-member dialectic:
@@ -42,8 +42,8 @@ Then convene the full council, a faster panel, or a two-member dialectic:
 For Codex, Gemini CLI, or OpenCode, clone once and use the matching installer flag:
 
 ```bash
-git clone https://github.com/0xNyk/council-of-high-intelligence.git
-cd council-of-high-intelligence
+git clone https://github.com/0xNyk/council-of-cognitive-excellence.git
+cd council-of-cognitive-excellence
 
 ./install.sh --codex-only
 ./install.sh --gemini-only
@@ -59,7 +59,7 @@ Good council questions have material downside, competing values, incomplete evid
 an irreversible choice. Write down the decision, constraints, evidence, reversibility, and
 deadline before adding personas.
 
-![Decision field notes](assets/decision-field-notes.jpeg)
+![Decision field notes](assets/decision-field-notes.png)
 
 The field notes distinguish facts from inference, assumptions, and unknowns. They also make
 it harder to use a long deliberation as decoration for a decision already made.
@@ -80,7 +80,7 @@ it harder to use a long deliberation as decoration for a decision already made.
 | Quick | Restate, rapid analysis, final positions | The decision needs breadth but not a full adversarial round |
 | Duo | Opening positions, direct response, final statements | One polarity defines the decision |
 
-![Council mode selector](assets/mode-selector.jpeg)
+![Council mode selector](assets/mode-selector.png)
 
 ```text
 /council --full What is the right pricing model?
@@ -108,7 +108,7 @@ blind, cross-examine other positions, declare a final stance, and then enter syn
 Enforcement checks look for premature agreement, repeated claims, missing dissent, and
 unsupported confidence.
 
-![Verdict blueprint](assets/verdict-blueprint.jpeg)
+![Verdict blueprint](assets/verdict-blueprint.png)
 
 Verdicts lead with what remains unresolved. A recommendation is paired with acceptable
 compromises, kill criteria, and one concrete next step. When the weighted tally remains
@@ -128,14 +128,14 @@ owner, review date, and evidence that would change the recommendation. At the ch
 mark the result confirmed, revised, reversed, or inconclusive instead of rewriting the
 original rationale.
 
-![Council outcome ledger](assets/outcome-ledger.jpeg)
+![Council outcome ledger](assets/outcome-ledger.png)
 
 ## The 18 lenses
 
 Members are analytical instruments, not impersonation claims. Each persona has a grounding
 protocol, a method, known blind spots, and a structured response contract.
 
-![Council panel composition](assets/panel-composition.jpeg)
+![Council panel composition](assets/panel-composition.png)
 
 | Member | Primary lens | Useful counterweight |
 |---|---|---|
@@ -168,7 +168,7 @@ The detection script checks which supported providers are available, then the co
 distributes seats across them. Polarity pairs are separated when possible so a single model
 family does not play both sides of a disagreement.
 
-![Council provider routing](assets/provider-routing.jpeg)
+![Council provider routing](assets/provider-routing.png)
 
 | Provider path | Detection |
 |---|---|
@@ -243,15 +243,15 @@ Security reports belong in [SECURITY.md](SECURITY.md), not a public issue.
 
 - [Release history](CHANGELOG.md)
 - [Brand kit](assets/BRAND.md)
-- [OSS profile](https://www.nyk.dev/oss/council-of-high-intelligence)
+- [OSS profile](https://www.nyk.dev/oss/council-of-cognitive-excellence)
 - [Sponsor ongoing maintenance](https://github.com/sponsors/0xNyk)
 - [Maintainer: Nyk](https://nyk.dev) · [@nykdotdev](https://x.com/nykdotdev)
-- [Issues](https://github.com/0xNyk/council-of-high-intelligence/issues)
+- [Issues](https://github.com/0xNyk/council-of-cognitive-excellence/issues)
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg">
-    <img src="assets/star-history-light.svg" alt="Council of High Intelligence star history" width="600">
+    <img src="assets/star-history-light.svg" alt="Council of Cognitive Excellence star history" width="600">
   </picture>
 </p>
 

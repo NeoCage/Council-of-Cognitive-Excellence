@@ -1,4 +1,4 @@
-# Council of High Intelligence
+# Council of Cognitive Excellence
 
 ## Architecture
 
@@ -6,7 +6,7 @@
 - `SKILL.codex.md` — Codex-specific council coordinator protocol (compressed mirror of SKILL.md)
 - `SKILL.gemini.md` — Gemini CLI-specific council coordinator protocol (compressed mirror of SKILL.md)
 - `agents/council-*.md` — 18 member personas with YAML frontmatter
-- `install.sh` — installs to `~/.claude/`, optionally `~/.codex/skills/council/` and `~/.gemini/extensions/council-of-high-intelligence/`
+- `install.sh` — installs to `~/.claude/`, optionally `~/.codex/skills/council/` and `~/.gemini/extensions/council-of-cognitive-excellence/`
 - `configs/` — provider/model routing templates
 - `demos/` — example prompts and scoring rubric
 - `scripts/` — validation checklist

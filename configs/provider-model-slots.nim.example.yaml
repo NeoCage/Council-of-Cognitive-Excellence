@@ -1,4 +1,4 @@
-# NVIDIA NIM provider example for Council of High Intelligence.
+# NVIDIA NIM provider example for Council of Cognitive Excellence.
 # Use with: /council --profile exploration-orthogonal --models configs/provider-model-slots.nim.example.yaml "..."
 #
 # NVIDIA NIM (build.nvidia.com) exposes ~130 open-weight models via an
