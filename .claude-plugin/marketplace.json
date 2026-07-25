@@ -2,8 +2,8 @@
   "name": "council-of-cognitive-excellence",
   "description": "Official marketplace for the Council of Cognitive Excellence — multi-persona, multi-provider deliberation for Claude Code.",
   "owner": {
-    "name": "0xNyk",
-    "url": "https://github.com/0xNyk"
+    "name": "NeoCage",
+    "url": "https://github.com/NeoCage"
   },
   "plugins": [
     {

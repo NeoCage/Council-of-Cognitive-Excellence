@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/0xNyk/council-of-cognitive-excellence/actions/workflows/lint.yml"><img src="https://github.com/0xNyk/council-of-cognitive-excellence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
-  <a href="https://github.com/0xNyk/council-of-cognitive-excellence/releases"><img src="https://img.shields.io/github/v/release/0xNyk/council-of-cognitive-excellence" alt="Release"></a>
+  <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml"><img src="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
+  <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases"><img src="https://img.shields.io/github/v/release/NeoCage/Council-of-Cognitive-Excellence" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
 </p>
 
@@ -27,7 +27,7 @@ preserves unresolved questions, dissent, kill criteria, and the next concrete ac
 Claude Code users can install the plugin directly:
 
 ```text
-/plugin marketplace add 0xNyk/council-of-cognitive-excellence
+/plugin marketplace add NeoCage/Council-of-Cognitive-Excellence
 /plugin install council@council-of-cognitive-excellence
 ```
 
@@ -42,7 +42,7 @@ Then convene the full council, a faster panel, or a two-member dialectic:
 For Codex, Gemini CLI, or OpenCode, clone once and use the matching installer flag:
 
 ```bash
-git clone https://github.com/0xNyk/council-of-cognitive-excellence.git
+git clone https://github.com/NeoCage/Council-of-Cognitive-Excellence.git
 cd council-of-cognitive-excellence
 
 ./install.sh --codex-only
@@ -243,10 +243,8 @@ Security reports belong in [SECURITY.md](SECURITY.md), not a public issue.
 
 - [Release history](CHANGELOG.md)
 - [Brand kit](assets/BRAND.md)
-- [OSS profile](https://www.nyk.dev/oss/council-of-cognitive-excellence)
-- [Sponsor ongoing maintenance](https://github.com/sponsors/0xNyk)
-- [Maintainer: Nyk](https://nyk.dev) · [@nykdotdev](https://x.com/nykdotdev)
-- [Issues](https://github.com/0xNyk/council-of-cognitive-excellence/issues)
+- [Issues](https://github.com/NeoCage/Council-of-Cognitive-Excellence/issues)
+- [Maintainer: NeoCage](https://github.com/NeoCage)
 
 <p align="center">
   <picture>
@@ -257,4 +255,4 @@ Security reports belong in [SECURITY.md](SECURITY.md), not a public issue.
 
 ## License
 
-[MIT](LICENSE) © 2026 [0xNyk](https://github.com/0xNyk)
+[MIT](LICENSE)

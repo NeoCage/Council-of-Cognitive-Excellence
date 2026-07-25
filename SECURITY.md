@@ -11,7 +11,7 @@ Council of Cognitive Excellence distributes **prompt files (skills + agent perso
 ## Reporting a vulnerability
 
 Please **do not open a public issue** for security-sensitive reports. Instead use
-[GitHub private vulnerability reporting](https://github.com/0xNyk/council-of-cognitive-excellence/security/advisories/new).
+[GitHub private vulnerability reporting](https://github.com/NeoCage/Council-of-Cognitive-Excellence/security/advisories/new).
 
 You can expect an initial response within 7 days. Verified fixes are credited in the changelog unless you prefer otherwise.
 

@@ -9,7 +9,7 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [1.2.0] - 2026-07-04
 
 ### Added
-- **Claude Code plugin-marketplace support** (#45) — `.claude-plugin/plugin.json` + `marketplace.json`; install with `/plugin marketplace add 0xNyk/council-of-cognitive-excellence` then `/plugin install council@council-of-cognitive-excellence`. Root `SKILL.md` remains the single source of truth via a `skills/council/` symlink; a new Asset Resolution section resolves agents/scripts/configs from either the install.sh layout or `${CLAUDE_PLUGIN_ROOT}`.
+- **Claude Code plugin-marketplace support** (#45) — `.claude-plugin/plugin.json` + `marketplace.json`; install with `/plugin marketplace add NeoCage/Council-of-Cognitive-Excellence` then `/plugin install council@council-of-cognitive-excellence`. Root `SKILL.md` remains the single source of truth via a `skills/council/` symlink; a new Asset Resolution section resolves agents/scripts/configs from either the install.sh layout or `${CLAUDE_PLUGIN_ROOT}`.
 - **Confidence-weighted vote tally** (#44) — a member's vote weight is now base weight (1.0, or 1.5× domain seat) × confidence factor from their `STANCE:` line (`high 1.0 / med 0.75 / low 0.5`). `W_total` stays at full base weights, so a hesitant council raises its own consensus bar and escalates to the user rather than forcing a verdict (Roundtable Policy, arXiv:2509.16839; ConfMAD, arXiv:2509.14034).
 - **Per-member `reasoning_method` frontmatter** (E3 / DMAD, arXiv:2410.12853) (#44) — all 18 personas declare a distinct reasoning method (elenchic-questioning, tail-stress-testing, causal-loop-mapping, …) and Round 1 prompts direct each member to reason via their method: method diversity, not just persona diversity.
 - **Project-level `./.council.yaml` overrides** (E7) (#44) — pin `profile`/`triad`/`members`/`chairman`/`models`/`no_auto_route` per project; CLI flags always win.
@@ -63,7 +63,7 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Fixed
 - Default OpenAI model for Codex set to `gpt-5.4` (E2E test found o3/o4-mini unavailable on standard ChatGPT accounts)
 
-[Unreleased]: https://github.com/0xNyk/council-of-cognitive-excellence/compare/v1.2.0...HEAD
-[1.2.0]: https://github.com/0xNyk/council-of-cognitive-excellence/releases/tag/v1.2.0
-[1.1.0]: https://github.com/0xNyk/council-of-cognitive-excellence/releases/tag/v1.1.0
-[1.0.0]: https://github.com/0xNyk/council-of-cognitive-excellence/releases/tag/v1.0.0
+[Unreleased]: https://github.com/NeoCage/Council-of-Cognitive-Excellence/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases/tag/v1.2.0
+[1.1.0]: https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases/tag/v1.1.0
+[1.0.0]: https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases/tag/v1.0.0

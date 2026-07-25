@@ -1,8 +1,8 @@
 # Brand kit — council-of-cognitive-excellence
 
 **As-of:** 2026-07-14  
-**Owner:** 0xNyk  
-**Hub:** https://www.nyk.dev/oss/council-of-cognitive-excellence
+**Owner:** NeoCage  
+**Hub:** https://github.com/NeoCage/Council-of-Cognitive-Excellence
 
 ## Role
 

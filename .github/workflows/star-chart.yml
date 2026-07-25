@@ -2,7 +2,7 @@ name: Star Chart
 
 # Refresh the self-hosted star-history SVGs weekly.
 # Self-hosted because api.star-history.com lowercases repo owners and
-# serves an empty chart for this repo (0xNyk -> 0xnyk).
+# serves an empty chart for this repo (NeoCage).
 
 on:
   schedule:
