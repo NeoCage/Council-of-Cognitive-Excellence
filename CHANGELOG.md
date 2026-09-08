@@ -6,6 +6,10 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+- **Apache Maven packaging** — `pom.xml` plus `maven-assembly-plugin` build `tar.gz` and `zip` assemblies of the installable council tree. The new Package workflow (`package.yml`) runs `mvn package` on `main`/`develop` and pull requests.
+- **GitHub Packages publish on release** — tagging `v*.*.*` now builds with Maven, attaches the assemblies to the GitHub Release, and deploys the artifact to GitHub Packages (`io.github.neocage:council-of-cognitive-excellence`).
+
 ## [1.2.0] - 2026-07-04
 
 ### Added

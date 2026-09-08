@@ -13,6 +13,11 @@ Thanks for contributing to Council of Cognitive Excellence.
    - `shellcheck install.sh` (for installer changes)
    - `./install.sh --dry-run`
    - `./scripts/council-simulation-checklist.sh`
+   - `mvn -B -ntp package` (Maven assembly; required when changing `pom.xml` or `src/assembly/`)
+
+Tagged releases (`v*.*.*`) run `.github/workflows/release.yml`: Maven package, GitHub Release
+assets, and deploy to GitHub Packages. Keep `pom.xml` version aligned with the latest
+`CHANGELOG.md` / `.claude-plugin/plugin.json` version before tagging.
 4. Commit with a clear message and open a PR to `main`.
 
 ## Branch cleanup after merge

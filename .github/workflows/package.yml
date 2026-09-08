@@ -1,0 +1,39 @@
+name: Package
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  maven:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Apache Maven
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+
+      - name: Maven package
+        run: mvn -B -ntp package
+
+      - name: Upload Maven assemblies
+        uses: actions/upload-artifact@v4
+        with:
+          name: maven-package
+          path: |
+            target/council-of-cognitive-excellence-*.tar.gz
+            target/council-of-cognitive-excellence-*.zip
+          if-no-files-found: error

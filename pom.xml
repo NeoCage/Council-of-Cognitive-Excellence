@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.github.neocage</groupId>
+  <artifactId>council-of-cognitive-excellence</artifactId>
+  <version>1.2.0</version>
+  <packaging>pom</packaging>
+
+  <name>Council of Cognitive Excellence</name>
+  <description>
+    Multi-persona, multi-provider deliberation plugin. Maven assembles the
+    installable council tree (skills, agents, configs, installer) for GitHub
+    Releases and GitHub Packages.
+  </description>
+  <url>https://github.com/NeoCage/Council-of-Cognitive-Excellence</url>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>NeoCage</id>
+      <name>NeoCage</name>
+      <url>https://github.com/NeoCage</url>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/NeoCage/Council-of-Cognitive-Excellence.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/NeoCage/Council-of-Cognitive-Excellence.git</developerConnection>
+    <url>https://github.com/NeoCage/Council-of-Cognitive-Excellence</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/NeoCage/Council-of-Cognitive-Excellence</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.7.1</version>
+        <configuration>
+          <appendAssemblyId>false</appendAssemblyId>
+          <tarLongFileMode>posix</tarLongFileMode>
+          <descriptors>
+            <descriptor>src/assembly/package.xml</descriptor>
+          </descriptors>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

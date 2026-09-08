@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  packages: write
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -16,18 +17,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build release tarball
+      - name: Set up Apache Maven
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+          server-id: github
+          server-username: GITHUB_ACTOR
+          server-password: GITHUB_TOKEN
+
+      - name: Align Maven version with tag
         run: |
-          VERSION="${GITHUB_REF_NAME}"
-          ARCHIVE="council-of-cognitive-excellence-${VERSION}.tar.gz"
-          tar --exclude='./.git' \
-              --exclude='./.github' \
-              --exclude='./demos' \
-              --exclude='.DS_Store' \
-              --exclude='./.gstack' \
-              --exclude='*.log' \
-              -czf "../${ARCHIVE}" .
-          echo "ARCHIVE=$(pwd)/../${ARCHIVE}" >> "$GITHUB_ENV"
+          VERSION="${GITHUB_REF_NAME#v}"
+          mvn -B -ntp org.codehaus.mojo:versions-maven-plugin:2.18.0:set \
+            -DnewVersion="${VERSION}" \
+            -DgenerateBackupPoms=false
+
+      - name: Maven package
+        run: mvn -B -ntp package
 
       - name: Extract release notes from CHANGELOG.md
         # Notes go through a file, never through ${{ }} interpolation into a
@@ -41,7 +49,19 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          shopt -s nullglob
+          assets=(target/council-of-cognitive-excellence-*.tar.gz target/council-of-cognitive-excellence-*.zip)
+          if [ "${#assets[@]}" -eq 0 ]; then
+            echo "Maven assembly produced no archives" >&2
+            exit 1
+          fi
           gh release create "${GITHUB_REF_NAME}" \
             --title "${GITHUB_REF_NAME}" \
             --notes-file "${RUNNER_TEMP}/release-notes.md" \
-            "${ARCHIVE}"
+            "${assets[@]}"
+
+      - name: Publish to GitHub Packages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: mvn -B -ntp deploy

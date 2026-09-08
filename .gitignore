@@ -22,6 +22,12 @@ __pycache__/
 .venv/
 venv/
 
+# Apache Maven
+target/
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+
 # Node and package managers
 node_modules/
 .npm/

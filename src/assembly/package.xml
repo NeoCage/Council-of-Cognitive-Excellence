@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly xmlns="http://maven.apache.org/ASSEMBLY/2.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/ASSEMBLY/2.2.0 https://maven.apache.org/xsd/assembly-2.2.0.xsd">
+  <id>package</id>
+  <formats>
+    <format>tar.gz</format>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <baseDirectory>council-of-cognitive-excellence-${project.version}</baseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>${project.basedir}</directory>
+      <outputDirectory>/</outputDirectory>
+      <excludes>
+        <exclude>.git/**</exclude>
+        <exclude>.github/**</exclude>
+        <exclude>.gstack/**</exclude>
+        <exclude>.idea/**</exclude>
+        <exclude>.claude/**</exclude>
+        <exclude>.codex/**</exclude>
+        <exclude>.gemini/**</exclude>
+        <exclude>.opencode/**</exclude>
+        <exclude>demos/**</exclude>
+        <exclude>target/**</exclude>
+        <exclude>src/assembly/**</exclude>
+        <exclude>**/.DS_Store</exclude>
+        <exclude>**/*.log</exclude>
+        <exclude>**/*.log.*</exclude>
+      </excludes>
+    </fileSet>
+  </fileSets>
+</assembly>

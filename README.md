@@ -10,6 +10,8 @@
 
 <p align="center">
   <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml"><img src="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
+  <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/package.yml"><img src="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/package.yml/badge.svg" alt="Package"></a>
+  <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/release.yml"><img src="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/release.yml/badge.svg" alt="Release"></a>
   <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases"><img src="https://img.shields.io/github/v/release/NeoCage/Council-of-Cognitive-Excellence" alt="Release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
 </p>
@@ -207,6 +209,28 @@ native host.
 Custom target directories are supported through `--claude-dir`, `--codex-dir`,
 `--gemini-dir`, and `--opencode-dir`. Run `./install.sh --help` for the current contract.
 
+## Maven package
+
+Release archives are built with Apache Maven. Locally:
+
+```bash
+mvn -B -ntp package
+```
+
+Assemblies land in `target/` as `council-of-cognitive-excellence-<version>.tar.gz` and `.zip`.
+Tagged releases (`v*.*.*`) also publish that artifact to [GitHub Packages](https://github.com/NeoCage/Council-of-Cognitive-Excellence/packages).
+
+```xml
+<dependency>
+  <groupId>io.github.neocage</groupId>
+  <artifactId>council-of-cognitive-excellence</artifactId>
+  <version>1.2.0</version>
+  <type>tar.gz</type>
+</dependency>
+```
+
+GitHub Packages requires a `settings.xml` server with id `github` and a token that can read packages.
+
 ## Verify the checkout
 
 ```bash
@@ -214,6 +238,7 @@ Custom target directories are supported through `--claude-dir`, `--codex-dir`,
 ./install.sh --dry-run --codex
 ./install.sh --dry-run --gemini
 ./install.sh --dry-run --opencode
+mvn -B -ntp package
 ```
 
 The checklist validates persona structure, host-protocol parity, routing configuration,
@@ -233,6 +258,7 @@ demos/                      sample sessions and verdict template
 scripts/                    detection, conversion, and validation tools
 assets/                     brand system and README visuals
 install.sh                  multi-host installer
+pom.xml                     Apache Maven assembly and GitHub Packages deploy
 ```
 
 Protocol changes start in `SKILL.md` and must remain behaviorally aligned with each host
