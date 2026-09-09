@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml"><img src="https://github.com/NeoCage/Council-of-Cognitive-Excellence/actions/workflows/lint.yml/badge.svg" alt="Lint"></a>
   <a href="https://github.com/NeoCage/Council-of-Cognitive-Excellence/releases"><img src="https://img.shields.io/github/v/release/NeoCage/Council-of-Cognitive-Excellence" alt="Release"></a>
+  <a href="https://www.npmjs.com/package/@neocage/council"><img src="https://img.shields.io/npm/v/%40neocage%2Fcouncil" alt="npm"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
 </p>
 
@@ -39,7 +40,15 @@ Then convene the full council, a faster panel, or a two-member dialectic:
 /council --duo Should we use microservices or a monolith?
 ```
 
-For Codex, Gemini CLI, or OpenCode, clone once and use the matching installer flag:
+For Codex, Gemini CLI, or OpenCode, install via npm instead of cloning:
+
+```bash
+npx @neocage/council --codex-only
+npx @neocage/council --gemini-only
+npx @neocage/council --opencode-only
+```
+
+Or clone directly and use the matching installer flag:
 
 ```bash
 git clone https://github.com/NeoCage/Council-of-Cognitive-Excellence.git
