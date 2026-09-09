@@ -1,0 +1,48 @@
+{
+  "name": "@neocage/council",
+  "version": "1.2.0",
+  "description": "18 AI personas deliberate your hardest decisions — structured multi-round deliberation with model diversity across providers.",
+  "keywords": [
+    "deliberation",
+    "multi-agent",
+    "decision-making",
+    "debate",
+    "personas",
+    "multi-llm",
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode"
+  ],
+  "homepage": "https://github.com/NeoCage/Council-of-Cognitive-Excellence",
+  "bugs": "https://github.com/NeoCage/Council-of-Cognitive-Excellence/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoCage/Council-of-Cognitive-Excellence.git"
+  },
+  "license": "MIT",
+  "author": "NeoCage (https://github.com/NeoCage)",
+  "type": "commonjs",
+  "bin": {
+    "council": "bin/council.js"
+  },
+  "files": [
+    "bin/",
+    "agents/",
+    "scripts/",
+    "configs/",
+    "skills/",
+    "SKILL.md",
+    "SKILL.codex.md",
+    "SKILL.gemini.md",
+    "SKILL.opencode.md",
+    "install.sh",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
