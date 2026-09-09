@@ -1,7 +1,7 @@
 # Council of Cognitive Excellence
 
 <p align="center">
-  <img src="assets/header.png" alt="Council of Cognitive Excellence" width="800">
+  <img src="https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/header.png" alt="Council of Cognitive Excellence" width="800">
 </p>
 
 <p align="center">
@@ -68,7 +68,7 @@ Good council questions have material downside, competing values, incomplete evid
 an irreversible choice. Write down the decision, constraints, evidence, reversibility, and
 deadline before adding personas.
 
-![Decision field notes](assets/decision-field-notes.png)
+![Decision field notes](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/decision-field-notes.png)
 
 The field notes distinguish facts from inference, assumptions, and unknowns. They also make
 it harder to use a long deliberation as decoration for a decision already made.
@@ -89,7 +89,7 @@ it harder to use a long deliberation as decoration for a decision already made.
 | Quick | Restate, rapid analysis, final positions | The decision needs breadth but not a full adversarial round |
 | Duo | Opening positions, direct response, final statements | One polarity defines the decision |
 
-![Council mode selector](assets/mode-selector.png)
+![Council mode selector](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/mode-selector.png)
 
 ```text
 /council --full What is the right pricing model?
@@ -117,7 +117,7 @@ blind, cross-examine other positions, declare a final stance, and then enter syn
 Enforcement checks look for premature agreement, repeated claims, missing dissent, and
 unsupported confidence.
 
-![Verdict blueprint](assets/verdict-blueprint.png)
+![Verdict blueprint](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/verdict-blueprint.png)
 
 Verdicts lead with what remains unresolved. A recommendation is paired with acceptable
 compromises, kill criteria, and one concrete next step. When the weighted tally remains
@@ -137,14 +137,14 @@ owner, review date, and evidence that would change the recommendation. At the ch
 mark the result confirmed, revised, reversed, or inconclusive instead of rewriting the
 original rationale.
 
-![Council outcome ledger](assets/outcome-ledger.png)
+![Council outcome ledger](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/outcome-ledger.png)
 
 ## The 18 lenses
 
 Members are analytical instruments, not impersonation claims. Each persona has a grounding
 protocol, a method, known blind spots, and a structured response contract.
 
-![Council panel composition](assets/panel-composition.png)
+![Council panel composition](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/panel-composition.png)
 
 | Member | Primary lens | Useful counterweight |
 |---|---|---|
@@ -177,7 +177,7 @@ The detection script checks which supported providers are available, then the co
 distributes seats across them. Polarity pairs are separated when possible so a single model
 family does not play both sides of a disagreement.
 
-![Council provider routing](assets/provider-routing.png)
+![Council provider routing](https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/provider-routing.png)
 
 | Provider path | Detection |
 |---|---|
@@ -251,14 +251,14 @@ Security reports belong in [SECURITY.md](SECURITY.md), not a public issue.
 ## Project links
 
 - [Release history](CHANGELOG.md)
-- [Brand kit](assets/BRAND.md)
+- [Brand kit](https://github.com/NeoCage/Council-of-Cognitive-Excellence/blob/main/assets/BRAND.md)
 - [Issues](https://github.com/NeoCage/Council-of-Cognitive-Excellence/issues)
 - [Maintainer: NeoCage](https://github.com/NeoCage)
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/star-history-dark.svg">
-    <img src="assets/star-history-light.svg" alt="Council of Cognitive Excellence star history" width="600">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/star-history-dark.svg">
+    <img src="https://raw.githubusercontent.com/NeoCage/Council-of-Cognitive-Excellence/main/assets/star-history-light.svg" alt="Council of Cognitive Excellence star history" width="600">
   </picture>
 </p>
 
