@@ -6,6 +6,11 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-09-09
+
+### Fixed
+- Cover image and other `assets/*` images not rendering on the npm package page — the README bundled in the 1.3.0 tarball still used relative image paths, which the GitHub Packages README renderer doesn't resolve. Re-published so the tarball ships the README with absolute `raw.githubusercontent.com` image URLs (fixed on `main` in the prior commit, but that fix doesn't reach an already-published tarball).
+
 ## [1.3.0] - 2026-09-09
 
 ### Added
