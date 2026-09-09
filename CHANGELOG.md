@@ -6,6 +6,12 @@ This project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-09-09
+
+### Added
+- npm packaging — `package.json` (scoped `@neocage/council`, public access) and an executable `bin/council.js` wrapper around `install.sh`, so the project is installable via `npx @neocage/council`.
+- `.github/workflows/publish.yml` — publishes to npmjs.org and GitHub Packages on `v*.*.*` tag pushes; refuses to publish if the tag and `package.json` version disagree.
+
 ## [1.2.0] - 2026-07-04
 
 ### Added
